@@ -24,8 +24,7 @@ Implements proper error handling and validation mechanisms to ensure consistent 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/Chathurangak90/MCComputers.git
-   cd mc-computers-invoice
+   git clone https://github.com/Chathurangak90/MC-Computers.git
 ### **Backend Setup:**
 
 - Navigate to the backend project directory.
