@@ -1,0 +1,243 @@
+.invoice-create-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .invoice-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .btn-primary {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .btn-remove {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    font-size: 10px;
+    height: 25px;
+    margin-top: 30px;
+  }
+  
+  button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+.invoice-item{
+    padding-right: 25px;
+}  
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the two fields */
+    margin-bottom: 15px; /* Space below the row */
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Ensures label stays above input */
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%; /* Ensures both inputs take equal width */
+    box-sizing: border-box; /* Prevents content overflow */
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Adds space between label and input */
+    color: #555;
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  
+  select.ng-invalid.ng-touched {
+    border-color: red;
+  }
+  .invoice-summary {
+    text-align: right;
+    margin-top: 10px;
+  }
+  .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust spacing between elements */
+  }
+  .tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .tabs button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tabs button.active {
+    font-weight: bold;
+    color: black;
+    background-color: #D3D3D3; /* Active tab color */
+  }
+  
+  .tabs button:hover {
+    background-color: #f1f1f1; /* Hover effect */
+  }
+  button.back-to-create {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Spacing inside the button */
+    font-size: 16px; /* Text size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+  }
+  
+  button.back-to-create:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  button.back-to-create:focus {
+    outline: none; /* Remove default focus outline */
+  }
+  .invoice-details {
+    display: flex; /* Flexbox layout for the paragraph */
+    align-items: center; /* Vertically align the text and button */
+    justify-content: space-between; /* Space between the text and button */
+    width: 100%; /* Ensure the container takes up the full width */
+  }
+  
+  button.view-details {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 6px 12px; /* Spacing inside the button */
+    font-size: 14px; /* Text size */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-flex; /* Align the icon and text in a row */
+    align-items: center; /* Vertically center the icon and text */
+    gap: 5px; /* Space between icon and text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+  }
+  
+  button.view-details i {
+    font-size: 16px; /* Icon size */
+  }
+  
+  button.view-details:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  button.view-details:focus {
+    outline: none; /* Remove default focus outline */
+  }
+  .quantity-small {
+    width: 150px; /* Adjust the width as per your requirement */
+    padding: 8px;
+    font-size: 0.875rem; /* Smaller text for the input */
+    text-align: right;
+  }
+  .cmb-product{
+    width: 325px; 
+  }
+
+
+  .form-group-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+#discountAmount{
+  text-align: right;
+}
+
+
+
+  
