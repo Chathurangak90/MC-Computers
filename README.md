@@ -35,7 +35,7 @@ Implements proper error handling and validation mechanisms to ensure consistent 
 
 - dotnet ef database update
 
-The API endpoints are now accessible via Swagger UI at: http://localhost:<port>/swagger.
+The API endpoints are now accessible via Swagger UI at: http://localhost:<44313>/swagger.
 
 #### **Customer and Product Table Data Insertion:**
 - To properly use the invoice generation system, both the Customer and Product tables need to be populated manually. Here’s how to do that:
