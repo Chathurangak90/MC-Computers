@@ -33,7 +33,8 @@ Implements proper error handling and validation mechanisms to ensure consistent 
 
 ### **Run database migrations to set up the database schema:**
 
-- dotnet ef database update
+- Update-Database
+- note that before the Update-Database in the NugetpackeManger-packgemanageconsole need to select default prject MCComputers.Repositories after select run Update-Database"
 
 The API endpoints are now accessible via Swagger UI at: http://localhost:<44313>/swagger.
 
